@@ -4,63 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/noscript.css">
     <style>
-        /* Style for the logo (Overview) */
-        header .logo {
-            font-size: 1.5em; /* Adjust font size */
-            font-weight: bold; /* Make it bold */
-            color: #000; /* Change color to black or preferred color */
-            text-decoration: none; /* No underline */
+        /* Fix for video embedding */
+        .video-container {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
         }
 
-        /* Style for the About Me heading */
-        .post.featured h2 {
-            font-size: 1.5em; /* Adjust font size */
-            font-weight: bold; /* Make it bold */
-            color: #000; /* Change color to black or preferred color */
-            text-decoration: none; /* No underline */
-        }
-
-        /* General body styling (optional for better appearance) */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        /* Styling for the main content container */
-        #main {
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 800px;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Styling for the featured post image */
-        .image.main img {
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        /* Styling for the "See more" button */
-        .actions .button.large {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1em;
-            transition: background 0.3s ease;
-        }
-
-        .actions .button.large:hover {
-            background: #0056b3;
+            height: 100%;
         }
     </style>
 </head>
@@ -72,144 +34,92 @@
     </header>
 
     <!-- Main -->
-<div id="main">
+    <div id="main">
 
-    <!-- Featured Post -->
-    <article class="post featured">
-        <header class="major">
-            <h2>About Me<br /></h2>
-            <p>
-                Hi! My name is Justin Lee, and I’m a graduate of Cal State Northridge with a Bachelor’s in Computer Science. 
-                I am a highly motivated and aspiring professional game developer with a passion for creating engaging and immersive 
-                gaming experiences. In addition to my development background, I am also a professional fighting game player with 
-                multiple high placements and medals in competitive tournaments, particularly in Tag Fighters like Skullgirls. 
-                This competitive experience has given me a unique understanding of game mechanics, balance, and player engagement, 
-                which I apply to my game development projects. 
-                With hands-on experience in game engines like Unity and Godot, I have a solid foundation in programming, 
-                problem-solving, and Quality Assurance. I have worked on independent game projects, and performed QA for indie 
-                fighting games. My technical skills include debugging, iterative testing, and collaboration with development teams, 
-                ensuring that games are not only functional but also fun and competitive. 
-                I’m driven by a strong desire to contribute to the gaming industry, and I’m constantly looking for opportunities to 
-                grow as both a developer and player. I bring a detail-oriented, creative, and passionate approach to every project 
-                I undertake.
-            </p>
-        </header>
-        <ul class="actions special">
-            <li><a href="#" class="button large">See more</a></li>
+        <!-- Featured Post -->
+        <article class="post featured">
+            <header class="major">
+                <h2>About Me<br /></h2>
+                <p>
+                    Hi! My name is Justin Lee, and I’m a graduate of Cal State Northridge with a Bachelor’s in Computer Science. 
+                    I am a highly motivated and aspiring professional game developer with a passion for creating engaging and immersive 
+                    gaming experiences. In addition to my development background, I am also a professional fighting game player with 
+                    multiple high placements and medals in competitive tournaments, particularly in Tag Fighters like Skullgirls. 
+                    This competitive experience has given me a unique understanding of game mechanics, balance, and player engagement, 
+                    which I apply to my game development projects. 
+                    With hands-on experience in game engines like Unity and Godot, I have a solid foundation in programming, 
+                    problem-solving, and Quality Assurance. I have worked on independent game projects and performed QA for indie 
+                    fighting games. My technical skills include debugging, iterative testing, and collaboration with development teams, 
+                    ensuring that games are not only functional but also fun and competitive. 
+                    I’m driven by a strong desire to contribute to the gaming industry, and I’m constantly looking for opportunities to 
+                    grow as both a developer and player. I bring a detail-oriented, creative, and passionate approach to every project 
+                    I undertake.
+                </p>
+            </header>
+            <ul class="actions special">
+                <li><a href="#" class="button large">See more</a></li>
+            </ul>
+        </article>
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/Hgyj2yg-Tl8" 
+                title="Burning Souls EVO 2023 Trailer" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Skills and Proficiencies -->
+        <section>
+            <header class="major">
+                <h2>Skills and Proficiencies</h2>
+            </header>
+            <p>Programming Languages: Proficient in C++, Java, and Python, with experience in building a variety of applications and systems.</p>
+            <p>Game Development: Experienced with game engines like Unity and Godot, with skills in iterative testing, debugging, and optimizing gameplay mechanics.</p>
+            <p>Quality Assurance: Performed QA testing for indie fighting games, focusing on core game mechanics (character move sets, hit detection, frame data), bug identification, and balance testing across multiple characters and abilities. Skilled in regression testing to ensure bug fixes and updates don’t introduce new issues.</p>
+            <p>Competitive Gaming Insight: As a high-level fighting game player, I have deep knowledge of game balance, mechanics, and player engagement, gained from years of experience from competing.</p>
+            <p>Mathematics & Algorithms: Completed advanced coursework in high-level mathematics, algorithms, database design, and data mining, providing a strong foundation for problem-solving and computational thinking.</p>
+            <p>Database Management: Familiar with SQL and PHP for database design, querying, and management, ensuring efficient data handling and retrieval.</p>  
+            <p>Project Management & Collaboration Tools: Experienced with industry-standard tools like JIRA for project management and GitHub for version control, facilitating smooth collaboration and efficient workflows in team environments.</p>    
+            <p>Bug Tracking & Reporting: Proficient in using bug tracking software, providing detailed reproduction steps and collaborating with developers to resolve gameplay issues and suggest improvements.</p>    
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <h3>Email</h3>
+            <p><a href="#">justinlee790b@gmail.com</a></p>
+        </section>
+        <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+                <li><a href="https://github.com/justinlee790b" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://www.linkedin.com/in/justin-lee-b82652297/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <!-- Copyright -->
+    <div id="copyright">
+        <ul>
+            <li>&copy; Justin Lee</li>
+            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
         </ul>
-    </article>
+    </div>
 
-	<iframe width="1236" height="695" src="https://www.youtube.com/embed/Hgyj2yg-Tl8" title="Burning Souls EVO 2023 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-
-							<!-- Skills and Proficiencies -->
-                            <section>
-                                <header class="major">
-                                    <h2>Skills and Proficiencies</h2>
-                                </header>
-                                <p>Programming Languages: Proficient in C++, Java, and Python, with experience in building a variety of applications and systems.</p>
-                                <p>Game Development: Experienced with game engines like Unity and Godot, with skills in iterative testing, debugging, and optimizing gameplay mechanics.</p>
-                                <p>Quality Assurance: Performed QA testing for indie fighting games, focusing on core game mechanics (character move sets, hit detection, frame data), bug identification, and balance testing across multiple characters and abilities. Skilled in regression testing to ensure bug fixes and updates don’t introduce new issues.</p>
-                                <p>Competitive Gaming Insight: As a high-level fighting game player, I have deep knowledge of game balance, mechanics, and player engagement, gained from years of experience from competing.</p>
-                                <p>Mathematics & Algorithms: Completed advanced coursework in high-level mathematics, algorithms, database design, and data mining, providing a strong foundation for problem-solving and computational thinking.</p>
-				<p>Database Management: Familiar with SQL and PHP for database design, querying, and management, ensuring efficient data handling and retrieval.</p>  
-				<p>Project Management & Collaboration Tools: Experienced with industry-standard tools like JIRA for project management and GitHub for version control, facilitating smooth collaboration and efficient workflows in team environments.</p>    
-				<p>Bug Tracking & Reporting: Proficient in using bug tracking software, providing detailed reproduction steps and collaborating with developers to resolve gameplay issues and suggest improvements.</p>    
-                            </section>
-
-						<!-- Posts -->
-						<section class="posts">
-							<article>
-								<header>
-									<h2><a href="#">League of Legends Prediction Algorithm<br />
-									</a></h2>
-								</header>
-								<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-								<p>Using the first 10 minutes of data from High Rank League of Legends Ranked matches, I was able to create a data mining algorithm that is able to accurately predict the outcome of the match.</p>
-								<ul class="actions special">
-									<li><a href="https://docs.google.com/document/d/1R5wU64fSrEupZ37G4ocDJUwdVxk7MOlUPs5KIODC2Vk/edit?usp=sharing" class="button">See more</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<h2><a href="#">VR 3D Model Viewer<br />
-									</a></h2>
-								</header>
-								<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-								<p>Me and a team of 3 other students got together to create an application akin to modeling software like Blender in a Virtual Reality environment. This allows for the user to be immersed in their modeling projects and gain a better on-hands perspective of their project.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/JaeM34/OpenVRModeler" class="button">See more</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<h2><a href="#">FetchQuest<br />
-									</a></h2>
-								</header>
-								<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-								<p>A free running game akin to Subway Surfers and Temple Run created in the Unity Engine using C#.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/dlin1765/FetchQuest" class="button">See more</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									<h2><a href="#">Shopping Site Database Design<br />
-									</a></h2>
-								</header>
-								<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-								<p>Me and a fellow classmate created a shopping website with a plethora of features that utilizes SQL and PHP databases.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/JonathanWilliams32/database-design-market-app" class="button">See more</a></li>
-								</ul>
-							</article>
-						</section>
-						
-
-							
-
-						<!-- Footer -->
-							
-								</div>
-							
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>			
-						</section>
-						<section class="split contact">
-							
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">justinlee790b@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://github.com/justinlee790b" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/justin-lee-b82652297/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								</ul>
-							</section>
-							</section>
-							</footer>
-							
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
