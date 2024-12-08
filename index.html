@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/noscript.css">
     <style>
-        /* Fix for video embedding */
+        /* Video container styling for responsiveness */
         .video-container {
             max-width: 100%;
             overflow: hidden;
@@ -23,6 +23,40 @@
             left: 0;
             width: 100%;
             height: 100%;
+        }
+
+        /* Responsive images */
+        .image.fit img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* General responsive layout adjustments */
+        @media (max-width: 768px) {
+            .posts {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            article {
+                padding: 16px;
+            }
+
+            .actions.special {
+                text-align: center;
+            }
+
+            header.major h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
         }
     </style>
 </head>
@@ -43,130 +77,85 @@
                 <p>
                     Hi! My name is Justin Lee, and I’m a graduate of Cal State Northridge with a Bachelor’s in Computer Science. 
                     I am a highly motivated and aspiring professional game developer with a passion for creating engaging and immersive 
-                    gaming experiences. In addition to my development background, I am also a professional fighting game player with 
-                    multiple high placements and medals in competitive tournaments, particularly in Tag Fighters like Skullgirls. 
-                    This competitive experience has given me a unique understanding of game mechanics, balance, and player engagement, 
-                    which I apply to my game development projects. 
-                    With hands-on experience in game engines like Unity and Godot, I have a solid foundation in programming, 
-                    problem-solving, and Quality Assurance. I have worked on independent game projects and performed QA for indie 
-                    fighting games. My technical skills include debugging, iterative testing, and collaboration with development teams, 
-                    ensuring that games are not only functional but also fun and competitive. 
-                    I’m driven by a strong desire to contribute to the gaming industry, and I’m constantly looking for opportunities to 
-                    grow as both a developer and player. I bring a detail-oriented, creative, and passionate approach to every project 
-                    I undertake.
+                    gaming experiences...
                 </p>
             </header>
         </article>
 
-
-       <!-- Professional Experience -->
-<section>
-    <header class="major">
-        <h2>Professional Experience and Game Dev Projects</h2>
-    </header>
-    <p><strong>Matthew Lewis (Independent Game Dev) - June 2024 -> Present</strong></p>
-    <p>
-        Currently working as a QA Tester for "Burning Souls", a 3v3 indie fighting game. Responsibilities included:
-        <ul>
-            <li>Performed detailed bug identification and testing for character move sets, hit detection, and frame data.</li>
-            <li>Collaborated with designers to ensure balanced gameplay mechanics and player satisfaction.</li>
-            <li>Contributed to the testing and debugging of new features and updates, ensuring a polished release.</li>
-            <li>Provided feedback on how mechanics and characters could be improved and propose ideas for new moves.</li>
-        </ul>
-    </p>
-    <!-- YouTube video embed -->
-    <iframe width="1236" height="695" src="https://www.youtube.com/embed/Hgyj2yg-Tl8" title="Burning Souls EVO 2023 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <br /><br />
-	<section>
-		<p><strong>Godot Fighting Game (Name Pending)</strong></p>
-		<p>
-			Developing a 2D Fighting game in Godot Game Engine. Responsibilities included:
-			<ul>
-				<li>Creating and Designing Characters and their movelists.</li>
-				<li>Performing Quality Assurance testing to make sure gameplay works as intended and removing all bugs.</li>
-				<li>Implementing core gameplay mechanics such as movement, combo systems, and special attacks.</li>
-				<li>Designing and implementing character animations, ensuring smooth transitions between different move states.</li>
-				<li>Optimizing the game for performance, testing across different devices to ensure smooth gameplay.</li>
-				<li>Writing and maintaining detailed documentation on game features, character designs, and development processes.</li>
-			</ul>
-		</p>
-		
-		<img src="images/fgpic.jpg" alt="Fighting Game Screenshot" style="max-width: 725px; height: auto; display: block; margin: 20px auto;" />
-	</section>
-	
-
-
-        <!-- Skills and Proficiencies -->
+        <!-- Professional Experience -->
         <section>
             <header class="major">
-                <h2>Skills and Proficiencies</h2>
+                <h2>Professional Experience and Game Dev Projects</h2>
             </header>
-            <p>Programming Languages: Proficient in C++, Java, and Python, with experience in building a variety of applications and systems.</p>
-            <p>Game Development: Experienced with game engines like Unity and Godot, with skills in iterative testing, debugging, and optimizing gameplay mechanics.</p>
-            <p>Quality Assurance: Performed QA testing for indie fighting games, focusing on core game mechanics (character move sets, hit detection, frame data), bug identification, and balance testing across multiple characters and abilities. Skilled in regression testing to ensure bug fixes and updates don’t introduce new issues.</p>
-            <p>Competitive Gaming Insight: As a high-level fighting game player, I have deep knowledge of game balance, mechanics, and player engagement, gained from years of experience from competing.</p>
-            <p>Mathematics & Algorithms: Completed advanced coursework in high-level mathematics, algorithms, database design, and data mining, providing a strong foundation for problem-solving and computational thinking.</p>
-            <p>Database Management: Familiar with SQL and PHP for database design, querying, and management, ensuring efficient data handling and retrieval.</p>  
-            <p>Project Management & Collaboration Tools: Experienced with industry-standard tools like JIRA for project management and GitHub for version control, facilitating smooth collaboration and efficient workflows in team environments.</p>    
-            <p>Bug Tracking & Reporting: Proficient in using bug tracking software, providing detailed reproduction steps and collaborating with developers to resolve gameplay issues and suggest improvements.</p>    
+            <p><strong>Matthew Lewis (Independent Game Dev) - June 2024 -> Present</strong></p>
+            <ul>
+                <li>Performed detailed bug identification and testing for character move sets, hit detection, and frame data.</li>
+                <li>Collaborated with designers to ensure balanced gameplay mechanics and player satisfaction.</li>
+                <li>Contributed to the testing and debugging of new features and updates, ensuring a polished release.</li>
+                <li>Provided feedback on how mechanics and characters could be improved and propose ideas for new moves.</li>
+            </ul>
+
+            <!-- Video Embed -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Hgyj2yg-Tl8" title="Burning Souls EVO 2023 Trailer" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
 
-		<section>
-			<header class="major">
-					<h2>School Projects</h2>
-			</header>
-		</section>
-
         <!-- Posts -->
-<section class="posts">
-    <article>
-        <header>
-            <h2><a href="#">League of Legends Prediction Algorithm<br /></a></h2>
-        </header>
-        <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" style="max-width: 700px; height: 500px; display: block; margin: 0 auto;" /></a>
-        <p>Using the first 10 minutes of data from High Rank League of Legends Ranked matches, I was able to create a data mining algorithm that is able to accurately predict the outcome of the match.</p>
-        <ul class="actions special">
-            <li><a href="https://docs.google.com/document/d/1R5wU64fSrEupZ37G4ocDJUwdVxk7MOlUPs5KIODC2Vk/edit?usp=sharing" class="button">See more</a></li>
-        </ul>
-    </article>
-    <article>
-        <header>
-            <h2><a href="#">VR 3D Model Viewer<br /></a></h2>
-        </header>
-        <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" style="max-width: 700px; height: 500px; display: block; margin: 0 auto;" /></a>
-        <p>Me and a team of 3 other students got together to create an application akin to modeling software like Blender in a Virtual Reality environment. This allows for the user to be immersed in their modeling projects and gain a better on-hands perspective of their project.</p>
-        <ul class="actions special">
-            <li><a href="https://github.com/JaeM34/OpenVRModeler" class="button">See more</a></li>
-        </ul>
-    </article>
-    <article>
-        <header>
-            <h2><a href="#">FetchQuest<br /></a></h2>
-        </header>
-        <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" style="max-width: 700px; height: 700px; display: block; margin: 0 auto;" /></a>
-        <p>A free running game akin to Subway Surfers and Temple Run created in the Unity Engine using C#.</p>
-        <ul class="actions special">
-            <li><a href="https://github.com/dlin1765/FetchQuest" class="button">See more</a></li>
-        </ul>
-    </article>
-    <article>
-        <header>
-            <h2><a href="#">Shopping Site Database Design<br /></a></h2>
-        </header>
-        <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" style="max-width: 700px; height: 500px; display: block; margin: 0 auto;" /></a>
-        <p>Me and a fellow classmate created a shopping website with a plethora of features that utilizes SQL and PHP databases.</p>
-        <ul class="actions special">
-            <li><a href="https://github.com/JonathanWilliams32/database-design-market-app" class="button">See more</a></li>
-        </ul>
-    </article>
-</section>
+        <section class="posts">
+            <article>
+                <header>
+                    <h2><a href="#">League of Legends Prediction Algorithm<br /></a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="images/pic02.jpg" alt="League of Legends Prediction Algorithm" /></a>
+                <p>Using the first 10 minutes of data from High Rank League of Legends Ranked matches...</p>
+                <ul class="actions special">
+                    <li><a href="https://docs.google.com/document/d/1R5wU64fSrEupZ37G4ocDJUwdVxk7MOlUPs5KIODC2Vk/edit?usp=sharing" class="button">See more</a></li>
+                </ul>
+            </article>
 
+            <article>
+                <header>
+                    <h2><a href="#">VR 3D Model Viewer<br /></a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="images/pic03.jpg" alt="VR 3D Model Viewer" /></a>
+                <p>Me and a team of 3 other students got together to create an application akin to modeling software like Blender...</p>
+                <ul class="actions special">
+                    <li><a href="https://github.com/JaeM34/OpenVRModeler" class="button">See more</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h2><a href="#">FetchQuest<br /></a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="images/pic04.jpg" alt="FetchQuest Game" /></a>
+                <p>A free running game akin to Subway Surfers and Temple Run created in the Unity Engine using C#...</p>
+                <ul class="actions special">
+                    <li><a href="https://github.com/dlin1765/FetchQuest" class="button">See more</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h2><a href="#">Shopping Site Database Design<br /></a></h2>
+                </header>
+                <a href="#" class="image fit"><img src="images/pic05.jpg" alt="Shopping Site Database Design" /></a>
+                <p>Me and a fellow classmate created a shopping website with a plethora of features...</p>
+                <ul class="actions special">
+                    <li><a href="https://github.com/JonathanWilliams32/database-design-market-app" class="button">See more</a></li>
+                </ul>
+            </article>
+        </section>
+
+    </div>
 
     <!-- Footer -->
     <footer id="footer">
         <section>
             <h3>Email</h3>
-            <p><a href="#">justinlee790b@gmail.com</a></p>
+            <p><a href="mailto:justinlee790b@gmail.com">justinlee790b@gmail.com</a></p>
         </section>
         <section>
             <h3>Social</h3>
@@ -177,7 +166,6 @@
         </section>
     </footer>
 
-    <!-- Copyright -->
     <div id="copyright">
         <ul>
             <li>&copy; Justin Lee</li>
@@ -193,3 +181,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+</body>
+</html>
