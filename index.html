@@ -25,16 +25,16 @@
             height: 100%;
         }
 
-        /* Responsive images */
         .image.fit img {
-            max-width: 100%;
-            height: auto; /* Maintain aspect ratio */
-            display: block;
+            max-width: 600px; /* Absolute limit on image width */
+            width: 100%; /* Ensure it scales down in smaller containers */
+            height: auto;
             margin: 0 auto;
+            display: block;
         }
-
+        
         .image.fit {
-            max-width: 90%; /* Optional: restrict max width */
+            max-width: 600px; /* Match the image's absolute limit */
             margin: 0 auto;
         }
 
