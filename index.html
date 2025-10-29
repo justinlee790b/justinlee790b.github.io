@@ -26,19 +26,25 @@
         }
 
         .image.fit img {
-            max-width: 600px; /* Absolute limit on image width */
-            width: 100%; /* Ensure it scales down in smaller containers */
+            max-width: 600px;
+            width: 100%;
             height: auto;
             margin: 0 auto;
             display: block;
         }
-        
+
         .image.fit {
-            max-width: 600px; /* Match the image's absolute limit */
+            max-width: 600px;
             margin: 0 auto;
         }
 
-        /* General responsive layout adjustments */
+        /* Text formatting */
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive layout adjustments */
         @media (max-width: 768px) {
             .posts {
                 display: flex;
@@ -64,7 +70,7 @@
             }
 
             .image.fit {
-                max-width: 100%; /* Allow full width on smaller screens */
+                max-width: 100%;
             }
         }
     </style>
@@ -82,9 +88,22 @@
         <!-- Featured Post -->
         <article class="post featured">
             <header class="major">
-                <h2>About Me<br /></h2>
+                <h2>About Me</h2>
                 <p>
-                    Heya! My name is Justin Lee. I'm a Korean American QA Analyst located in Metairie, LA. I am currently working as a QA Analyst at <p><a href="https://www.testroniclabs.com/">Testronic Labratories</a></p> 
+                    Heya! My name is <strong>Justin Lee</strong>, a <strong>Korean American QA Analyst</strong> based in <strong>Metairie, Louisiana</strong>. I currently work at 
+                    <a href="https://www.testroniclabs.com" target="_blank">Testronic Laboratories</a>, where I own QA coverage for <strong>Valorant</strong>, focusing on characters, progression, and match services to ensure a smooth and balanced gameplay experience.
+                </p>
+
+                <p>
+                    I bring experience across multiple QA roles — from managing test cases and databases to leading comprehensive test passes for unreleased Unreal Engine projects. My work blends technical precision with a deep understanding of player expectations, shaped by years of competing at a high level in <strong>Valorant</strong> and <strong>fighting games like Skullgirls</strong>.
+                </p>
+
+                <p>
+                    I’m passionate about quality, competitive integrity, and creating polished, player-first experiences. With a <strong>B.S. in Computer Science from California State University, Northridge</strong>, and an <strong>ISTQB Foundation certification</strong>, I combine structured testing methodology with an authentic love for gaming and improvement through iteration.
+                </p>
+
+                <p>
+                    When I’m not working, you can usually find me <strong>traveling across the country to compete at major fighting game tournaments</strong>.
                 </p>
             </header>
         </article>
@@ -94,15 +113,15 @@
             <header class="major">
                 <h2>Game Dev Projects</h2>
             </header>
-            <p><strong>QA Tester - Matthew Lewis (Independent Game Dev) - June 2024 -> Present</strong></p>
-            <p> Working as a QA Playtester for indie 3v3 Fighting Game Burning Souls. Responsibilities included: 
+            <p><strong>QA Tester - Matthew Lewis (Independent Game Dev) - June 2024 → Present</strong></p>
+            <p>Working as a QA Playtester for indie 3v3 Fighting Game <em>Burning Souls</em>. Responsibilities include:</p>
             <ul>
                 <li>Performed detailed bug identification and testing for character move sets, hit detection, and frame data.</li>
                 <li>Collaborated with designers to ensure balanced gameplay mechanics and player satisfaction.</li>
                 <li>Contributed to the testing and debugging of new features and updates, ensuring a polished release.</li>
-                <li>Provided feedback on how mechanics and characters could be improved and propose ideas for new moves.</li>
+                <li>Provided feedback on how mechanics and characters could be improved and proposed ideas for new moves.</li>
             </ul>
-        </p>
+
             <!-- Video Embed -->
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/Hgyj2yg-Tl8" title="Burning Souls EVO 2023 Trailer" 
@@ -112,89 +131,86 @@
 
         <section>
             <p><strong>Head Dev - 2D Fighting Game (Name Pending)</strong></p>
-            <p>
-                Developing a 2D Fighting game in Godot Game Engine. Responsibilities included:
-                <ul>
-                    <li>Creating and Designing Characters and their movelists.</li>
-                    <li>Performing Quality Assurance testing to make sure gameplay works as intended and removing all bugs.</li>
-                    <li>Implementing core gameplay mechanics such as movement, combo systems, and special attacks.</li>
-                    <li>Designing and implementing character animations, ensuring smooth transitions between different move states.</li>
-                    <li>Optimizing the game for performance, testing across different devices to ensure smooth gameplay.</li>
-                    <li>Writing and maintaining detailed documentation on game features, character designs, and development processes.</li>
-                </ul>
-            </p>
+            <p>Developing a 2D fighting game in the Godot Engine. Responsibilities include:</p>
+            <ul>
+                <li>Creating and designing characters and their move lists.</li>
+                <li>Performing QA testing to ensure gameplay functions as intended and all bugs are resolved.</li>
+                <li>Implementing core gameplay mechanics such as movement, combo systems, and special attacks.</li>
+                <li>Designing and implementing character animations with smooth transitions between states.</li>
+                <li>Optimizing performance across devices to ensure smooth gameplay.</li>
+                <li>Writing and maintaining documentation on features, designs, and development processes.</li>
+            </ul>
             <img src="images/fgpic.jpg" alt="Fighting Game Screenshot" class="image fit" />
         </section>
-    </section>
 
-    <article class="post featured">
-        <header class="major">
-            <h2>School Projects<br /></h2>
+        <!-- School Projects -->
+        <article class="post featured">
+            <header class="major">
+                <h2>School Projects</h2>
+            </header>
 
-        <!-- Posts -->
-        <!-- Posts -->
-<section class="posts">
-    <article>
-        <p><strong><a href="#">League of Legends Prediction Algorithm<br /></a></strong></p>
-        <a href="#" class="image fit"><img src="images/pic02.jpg" alt="League of Legends Prediction Algorithm" /></a>
-        <p>Using the first 10 minutes of data from High Rank League of Legends Ranked matches, I was able to create a data mining algorithm that is able to accurately predict the outcome of the match.</p>
-        <ul>
-            <li>Collected and pre-processed data from ranked matches for analysis.</li>
-            <li>Developed a prediction algorithm using Python and data science libraries.</li>
-            <li>Tested the model's accuracy and refined it based on feedback.</li>
-            <li>Documented the findings and created a user guide for the algorithm.</li>
-        </ul>
-        <ul class="actions special">
-            <li><a href="https://docs.google.com/document/d/1R5wU64fSrEupZ37G4ocDJUwdVxk7MOlUPs5KIODC2Vk/edit?usp=sharing" class="button">See more</a></li>
-        </ul>
-    </article>
+            <section class="posts">
+                <article>
+                    <p><strong><a href="#">League of Legends Prediction Algorithm</a></strong></p>
+                    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="League of Legends Prediction Algorithm" /></a>
+                    <p>Using the first 10 minutes of data from high-rank League of Legends matches, I built a data mining algorithm that accurately predicts match outcomes.</p>
+                    <ul>
+                        <li>Collected and pre-processed ranked match data.</li>
+                        <li>Developed prediction logic using Python and data science libraries.</li>
+                        <li>Tested model accuracy and refined based on feedback.</li>
+                        <li>Documented findings and created a user guide.</li>
+                    </ul>
+                    <ul class="actions special">
+                        <li><a href="https://docs.google.com/document/d/1R5wU64fSrEupZ37G4ocDJUwdVxk7MOlUPs5KIODC2Vk/edit?usp=sharing" class="button">See more</a></li>
+                    </ul>
+                </article>
 
-    <article>
-        <p><strong><a href="#">VR 3D Model Viewer<br /></a></strong></p>
-        <a href="#" class="image fit"><img src="images/pic03.jpg" alt="VR 3D Model Viewer" /></a>
-        <p>Me and a team of 3 other students got together to create an application akin to modeling software like Blender in a Virtual Reality environment. This allows for the user to be immersed in their modeling projects and gain a better on-hands perspective of their project.</p>
-        <ul>
-            <li>Designed the VR interface for intuitive user interaction.</li>
-            <li>Implemented object manipulation features like scaling, rotating, and moving in 3D space.</li>
-            <li>Optimized the rendering pipeline to handle high-poly models in VR.</li>
-            <li>Collaborated with team members using Git for version control and task management.</li>
-        </ul>
-        <ul class="actions special">
-            <li><a href="https://github.com/JaeM34/OpenVRModeler" class="button">See more</a></li>
-        </ul>
-    </article>
+                <article>
+                    <p><strong><a href="#">VR 3D Model Viewer</a></strong></p>
+                    <a href="#" class="image fit"><img src="images/pic03.jpg" alt="VR 3D Model Viewer" /></a>
+                    <p>A VR modeling tool that immerses users in 3D environments for better perspective on their projects.</p>
+                    <ul>
+                        <li>Designed a VR interface for intuitive controls.</li>
+                        <li>Implemented 3D object manipulation and transformation.</li>
+                        <li>Optimized rendering for high-poly assets.</li>
+                        <li>Used Git for collaborative version control.</li>
+                    </ul>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/JaeM34/OpenVRModeler" class="button">See more</a></li>
+                    </ul>
+                </article>
 
-    <article>
-        <p><strong><a href="#">FetchQuest<br /></a></strong></p>
-        <a href="#" class="image fit"><img src="images/pic04.jpg" alt="FetchQuest Game" /></a>
-        <p>A free running game akin to Subway Surfers and Temple Run created in the Unity Engine using C#.</p>
-        <ul>
-            <li>Programmed the core gameplay loop, including obstacles and rewards.</li>
-            <li>Designed levels with increasing difficulty and engaging gameplay mechanics.</li>
-            <li>Optimized performance for mobile platforms to ensure smooth gameplay.</li>
-            <li>Conducted user testing to refine controls and improve player experience.</li>
-        </ul>
-        <ul class="actions special">
-            <li><a href="https://github.com/dlin1765/FetchQuest" class="button">See more</a></li>
-        </ul>
-    </article>
+                <article>
+                    <p><strong><a href="#">FetchQuest</a></strong></p>
+                    <a href="#" class="image fit"><img src="images/pic04.jpg" alt="FetchQuest Game" /></a>
+                    <p>A free-running mobile game inspired by Subway Surfers and Temple Run, built in Unity with C#.</p>
+                    <ul>
+                        <li>Developed the core gameplay loop.</li>
+                        <li>Designed challenging, replayable levels.</li>
+                        <li>Optimized for mobile performance.</li>
+                        <li>Conducted player testing for UX improvements.</li>
+                    </ul>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/dlin1765/FetchQuest" class="button">See more</a></li>
+                    </ul>
+                </article>
 
-    <article>
-        <p><strong><a href="#">Shopping Site Database Design<br /></a></strong></p>
-        <a href="#" class="image fit"><img src="images/pic05.jpg" alt="Shopping Site Database Design" /></a>
-        <p>Me and a fellow classmate created a shopping website with a plethora of features that utilizes SQL and PHP databases.</p>
-        <ul>
-            <li>Designed and implemented the database schema using SQL.</li>
-            <li>Developed front-end interfaces with PHP and HTML for user interaction.</li>
-            <li>Implemented features like product search, user authentication, and shopping cart functionality.</li>
-            <li>Conducted extensive testing to ensure database integrity and application security.</li>
-        </ul>
-        <ul class="actions special">
-            <li><a href="https://github.com/JonathanWilliams32/database-design-market-app" class="button">See more</a></li>
-        </ul>
-    </article>
-</section>
-
+                <article>
+                    <p><strong><a href="#">Shopping Site Database Design</a></strong></p>
+                    <a href="#" class="image fit"><img src="images/pic05.jpg" alt="Shopping Site Database Design" /></a>
+                    <p>A collaborative project creating a shopping website with SQL and PHP backend functionality.</p>
+                    <ul>
+                        <li>Designed and implemented the database schema.</li>
+                        <li>Developed PHP-based front-end interfaces.</li>
+                        <li>Implemented authentication and cart features.</li>
+                        <li>Tested for data integrity and security.</li>
+                    </ul>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/JonathanWilliams32/database-design-market-app" class="button">See more</a></li>
+                    </ul>
+                </article>
+            </section>
+        </article>
 
     </div>
 
