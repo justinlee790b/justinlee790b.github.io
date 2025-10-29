@@ -8,20 +8,16 @@
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/noscript.css">
     <style>
-        /* Overall page layout */
+        /* General container to prevent zoomed-in layout */
         body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
 
-        #main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h2, h3, h4 {
-            margin-top: 1.5em;
+        h2 {
             margin-bottom: 0.5em;
         }
 
@@ -30,16 +26,18 @@
         }
 
         ul {
-            margin-left: 20px;
             margin-bottom: 1em;
+            padding-left: 20px;
         }
 
+        /* Video container styling for responsiveness */
         .video-container {
             max-width: 600px;
             margin: 20px auto;
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
+            overflow: hidden;
         }
 
         .video-container iframe {
@@ -54,26 +52,20 @@
             max-width: 600px;
             width: 100%;
             height: auto;
-            display: block;
             margin: 20px auto;
+            display: block;
         }
 
-        /* Responsive adjustments */
+        section {
+            margin-bottom: 40px;
+        }
+
         @media (max-width: 768px) {
-            #main {
+            body {
                 padding: 10px;
-                max-width: 100%;
             }
 
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            p, li {
-                font-size: 1rem;
-            }
-
-            .image.fit, .video-container {
+            .video-container, .image.fit img {
                 max-width: 100%;
             }
         }
@@ -86,7 +78,7 @@
         <span class="logo">Justin Lee's Portfolio</span>
     </header>
 
-    <!-- Main Content -->
+    <!-- Main -->
     <div id="main">
 
         <!-- About Me -->
@@ -94,35 +86,198 @@
             <header class="major">
                 <h2>About Me</h2>
                 <p>
-                    Heya! My name is Justin Lee. I'm a Korean American QA Analyst located in Metairie, LA. 
-                    I am currently working as a QA Analyst at <a href="https://www.testroniclabs.com/">Testronic Labratories</a>. 
-                    When I'm not working, I'm traveling around the country to compete at major fighting game tournaments!
+                    Heya! My name is Justin Lee, a Korean American QA Analyst based in Metairie, Louisiana. I currently work at 
+                    <a href="https://www.testroniclabs.com" target="_blank">Testronic Laboratories</a>, where I own QA coverage for Valorant, focusing on characters, progression, and match services to ensure a smooth and balanced gameplay experience.
                 </p>
+
                 <p>
-                    I have experience working on competitive games like Valorant and indie fighting games, focusing on QA testing, bug identification, and ensuring smooth gameplay experiences. 
-                    My passion for games drives me to understand them deeply from both a player and tester perspective, constantly learning and applying that knowledge to create polished, player-focused experiences.
+                    I bring experience across multiple QA roles — from managing test cases and databases to leading comprehensive test passes for unreleased Unreal Engine projects. My work blends technical precision with a deep understanding of player expectations, shaped by years of competing at a high level in Valorant and fighting games like Skullgirls.
+                </p>
+
+                <p>
+                    I’m passionate about quality, competitive integrity, and creating polished, player-first experiences. With a B.S. in Computer Science from California State University, Northridge, and an ISTQB Foundation certification, I combine structured testing methodology with an authentic love for gaming and improvement through iteration.
+                </p>
+
+                <p>
+                    When I’m not working, you can usually find me traveling across the country to compete at major fighting game tournaments.
                 </p>
             </header>
         </article>
 
         <!-- Professional Experience -->
-        <article class="post featured">
+        <section>
             <header class="major">
                 <h2>Professional Experience</h2>
+            </header>
 
-                <h3>Testronic Labratories - QA Analyst (Sep 2025 - Present) / QA Technician (Jul 2025 - Sep 2025), Metairie, LA</h3>
+            <!-- Testronic Laboratories -->
+            <article>
+                <h3>Testronic Laboratories – QA Analyst (Valorant)</h3>
+                <p>Metairie, Louisiana | July 2025 – Present</p>
                 <ul>
-                    <li>Owned QA coverage for characters, progression and match services, identifying and reporting issues to ensure smooth and balanced gameplay.</li>
-                    <li>Developed comprehensive test cases, managed databases, and ensured adherence to company and client standards.</li>
-                    <li>Identified and reported software bugs, conducted rigorous testing to ensure optimal consumer experience.</li>
-                    <li>Collaborated with cross-functional teams to achieve polished software releases.</li>
-                    <li>Utilized JIRA, Microsoft Excel, and Google Sheets for efficient project management and documentation.</li>
-                    <li>Proactively communicated with clients to exceed expectations and drive process improvements.</li>
-                    <li>Vetted defect and bug reports from Video Game Techs to ensure quality and correctness before uploading to the defect database.</li>
+                    <li>Owned QA coverage for characters, progression, and match services, identifying and reporting issues to ensure smooth and balanced gameplay.</li>
+                    <li>Develop comprehensive test cases, manage databases, and ensure adherence to company and client standards.</li>
+                    <li>Identify and report software bugs, conduct rigorous testing to ensure optimal consumer experience.</li>
+                    <li>Collaborate with cross-functional teams to achieve polished software releases.</li>
+                    <li>Utilize JIRA, Microsoft Excel, and Google Sheets for efficient project management and documentation.</li>
+                    <li>Proactively communicate with clients to exceed expectations and drive process improvements.</li>
+                    <li>Vet defect and bug reports from Video Game Techs to ensure quality and correctness before uploading to the defect database.</li>
                     <li>Tripled monthly performance quotas by proactively identifying opportunities and going above expectations.</li>
                 </ul>
-
-                <h4>Shipped Products</h4>
+                <p><strong>Shipped Products:</strong></p>
                 <ul>
+                    <li>Veto</li>
+                    <li>Battlepass (V25 Act 6)</li>
+                </ul>
+            </article>
+
+            <!-- Side (Formerly PTW) -->
+            <article>
+                <h3>Side – Game QA Analyst</h3>
+                <p>Charleston, South Carolina | February 2025 – June 2025</p>
+                <ul>
+                    <li>Owned the design, execution, and management of test cases and test plans for an unreleased Unreal Engine project on multiple consoles and PC, ensuring gameplay quality, functionality, and performance. Provided detailed bug reporting and platform compliance verification using Jira, Azure DevOps, QTest, and Bugsplat.</li>
+                    <li>Coordinated daily test assignments and feedback for a large QA team and external vendors, ensuring timely issue resolution and clear status reporting.</li>
+                    <li>Conducted comprehensive test passes, including regression, performance, smoke, soak, functional, ad-hoc, and exploratory testing; logged and tracked 50+ critical bugs in the first month.</li>
+                    <li>Partnered cross-functionally with developers, designers, and publishers to advocate for player-first quality standards and smooth development cycles.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Game Dev Projects -->
+        <section>
+            <header class="major">
+                <h2>Game Dev Projects</h2>
+            </header>
+
+            <article>
+                <h3>QA Tester – Burning Souls</h3>
+                <p>June 2024 – June 2025</p>
+                <ul>
+                    <li>Designed and executed test strategies focused on balancing character move sets, hit detection accuracy, frame data integrity, and exploit detection for a competitive fighting game.</li>
+                    <li>Performed detailed bug identification and testing for character move sets, hit detection, and frame data.</li>
+                    <li>Helped debug gameplay mechanics and identify exploits in new patches.</li>
+                    <li>Validated controller input responsiveness for console builds and maintained high standards for competitive integrity and gameplay feel.</li>
+                </ul>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Hgyj2yg-Tl8" title="Burning Souls EVO 2023 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+
+            <article>
+                <h3>Head Dev – 2D Fighting Game (Name Pending)</h3>
+                <ul>
+                    <li>Creating and designing characters and their movelists.</li>
+                    <li>Performing QA testing to ensure gameplay works as intended and removing all bugs.</li>
+                    <li>Implementing core gameplay mechanics such as movement, combo systems, and special attacks.</li>
+                    <li>Designing and implementing character animations, ensuring smooth transitions between different move states.</li>
+                    <li>Optimizing the game for performance, testing across different devices to ensure smooth gameplay.</li>
+                    <li>Writing and maintaining detailed documentation on game features, character designs, and development processes.</li>
+                </ul>
+                <div class="image fit">
+                    <img src="images/fgpic.jpg" alt="Fighting Game Screenshot" />
+                </div>
+            </article>
+        </section>
+
+        <!-- School Projects -->
+        <section>
+            <header class="major">
+                <h2>School Projects</h2>
+            </header>
+            <section class="posts">
+                <article>
+                    <p><strong>League of Legends Prediction Algorithm</strong></p>
+                    <div class="image fit">
+                        <img src="images/pic02.jpg" alt="League of Legends Prediction Algorithm" />
+                    </div>
+                    <p>Using the first 10 minutes of data from High Rank League of Legends Ranked matches, I was able to create a data mining algorithm that is able to accurately predict the outcome of the match.</p>
+                    <ul>
+                        <li>Collected and pre-processed data from ranked matches for analysis.</li>
+                        <li>Developed a prediction algorithm using Python and data science libraries.</li>
+                        <li>Tested the model's accuracy and refined it based on feedback.</li>
+                        <li>Documented the findings and created a user guide for the algorithm.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <p><strong>VR 3D Model Viewer</strong></p>
+                    <div class="image fit">
+                        <img src="images/pic03.jpg" alt="VR 3D Model Viewer" />
+                    </div>
+                    <p>Created an application akin to modeling software like Blender in VR, allowing immersive interaction with 3D models.</p>
+                    <ul>
+                        <li>Designed the VR interface for intuitive user interaction.</li>
+                        <li>Implemented object manipulation features like scaling, rotating, and moving in 3D space.</li>
+                        <li>Optimized the rendering pipeline to handle high-poly models in VR.</li>
+                        <li>Collaborated with team members using Git for version control and task management.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <p><strong>FetchQuest</strong></p>
+                    <div class="image fit">
+                        <img src="images/pic04.jpg" alt="FetchQuest Game" />
+                    </div>
+                    <p>A free running game akin to Subway Surfers and Temple Run created in Unity Engine using C#.</p>
+                    <ul>
+                        <li>Programmed the core gameplay loop, including obstacles and rewards.</li>
+                        <li>Designed levels with increasing difficulty and engaging gameplay mechanics.</li>
+                        <li>Optimized performance for mobile platforms to ensure smooth gameplay.</li>
+                        <li>Conducted user testing to refine controls and improve player experience.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <p><strong>Shopping Site Database Design</strong></p>
+                    <div class="image fit">
+                        <img src="images/pic05.jpg" alt="Shopping Site Database Design" />
+                    </div>
+                    <p>Created a shopping website with a plethora of features that utilizes SQL and PHP databases.</p>
+                    <ul>
+                        <li>Designed and implemented the database schema using SQL.</li>
+                        <li>Developed front-end interfaces with PHP and HTML for user interaction.</li>
+                        <li>Implemented product search, user authentication, and shopping cart functionality.</li>
+                        <li>Conducted extensive testing to ensure database integrity and application security.</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <h3>Email</h3>
+            <p><a href="mailto:justinlee790b@gmail.com">justinlee790b@gmail.com</a></p>
+        </section>
+        <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+                <li><a href="https://github.com/justinlee790b" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://www.linkedin.com/in/justin-lee-b82652297/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <div id="copyright">
+        <ul>
+            <li>&copy; Justin Lee</li>
+            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
 
 
